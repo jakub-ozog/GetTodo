@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Gabarito', cursive;
+  background: linear-gradient(
+    0deg,
+    rgba(67, 81, 133, 1) 0%,
+    rgba(16, 39, 79, 1) 100%
+  );
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+
+  &__logo {
+    font-size: 2rem;
+
+    i {
+      font-size: 2.5rem;
+      margin-right: .25rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 2rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem;
+    }
+  }
+
+  &__getStarted {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    outline: none;
+    background-color: rgb(66, 32, 218);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+
+.hero {
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+
+  &__heroWrapper {
+   
+  }
+
+  &__title {
+    font-size: 6rem;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 1rem;
+  }
+
+  &__tryBtn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    outline: none;
+    background-color: rgb(32, 119, 218);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: none;
+    border: none;
+  }
+}
