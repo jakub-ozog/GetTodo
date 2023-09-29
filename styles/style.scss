@@ -4,14 +4,11 @@
   margin: 0;
 }
 
-
 body {
   font-family: 'Gabarito', cursive;
-  background: linear-gradient(
-    0deg,
-    rgba(67, 81, 133, 1) 0%,
-    rgba(16, 39, 79, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(67, 81, 133, 1) 0%,
+      rgba(16, 39, 79, 1) 100%);
   background-attachment: fixed;
 }
 
@@ -20,7 +17,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-
 
 .nav {
   display: flex;
@@ -33,8 +29,8 @@ body {
     font-size: 2rem;
 
     i {
-      font-size: 2.5rem;
-      margin-right: .25rem;
+      font-size: 2rem;
+      margin-right: 0.25rem;
     }
   }
 
@@ -65,17 +61,12 @@ body {
   }
 }
 
-
 .hero {
   margin-top: 7rem;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: #fff;
-
-  &__heroWrapper {
-   
-  }
 
   &__title {
     font-size: 6rem;
@@ -99,5 +90,104 @@ body {
     font-weight: 600;
     box-shadow: none;
     border: none;
+  }
+}
+
+.todo {
+  margin-top: 6rem;
+
+  ul {
+    list-style-type: none;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    width: clamp(200px, 70%, 1000px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(16px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  &__mainTitle {
+    font-size: 1.5rem;
+    color: #5e7ce2;
+    text-align: center;
+    padding: 2rem;
+
+    i {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__inputWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+  }
+
+  &__taskInput {
+    padding: 1rem 3rem;
+    border: none;
+    font-size: 1rem;
+    margin-left: 2rem;
+    border-radius: 15px;
+    color: #000;
+
+    &::placeholder {
+      color: #828282;
+    }
+  }
+
+  &__taskAddBtn {
+    cursor: pointer;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #4a61ad;
+    transition: .1s ease-in-out;
+
+    &:hover {
+      transition: .1 ease-in-out;
+      background-color: #283b7c;
+
+    }
+
+    i {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+  }
+
+  &__taskContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color:#10274f;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  &__newTask {
+    position: relative;
+    margin-left: 2rem;
+  }
+
+  &__removeTaskBtn {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    cursor: pointer;
+  }
+
+  &__checkTask {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    cursor: pointer;
   }
 }
