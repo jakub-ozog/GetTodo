@@ -28,6 +28,7 @@ function addTask(e) {
 taskContainer.addEventListener('click', function (e) {
   if (e.target.classList.contains('todo__checkTask')) {
     e.target.classList.toggle("fa-circle-check");
+    e.target.parentElement.classList.toggle('todo__textThrough');
   } else if (e.target.classList.contains('todo__removeTaskBtn')) {
     e.target.parentElement.remove();
   }
