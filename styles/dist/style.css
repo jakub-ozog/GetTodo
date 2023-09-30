@@ -189,6 +189,14 @@ body {
   position: relative;
   margin-left: 2rem;
 }
+@media (max-width: 576px) {
+  .todo__newTask {
+    font-size: 0.75rem;
+  }
+}
+.todo__singleTaskWrapper {
+  padding-right: 4rem;
+}
 .todo__removeTaskBtn {
   position: absolute;
   top: 0;

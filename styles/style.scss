@@ -71,10 +71,10 @@ body {
   text-align: center;
   color: #fff;
 
-  
+
   @media (max-width: 768px) {
-   margin-left: 1.5rem;
-   margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   &__title {
@@ -88,7 +88,7 @@ body {
       font-size: 3rem;
     }
 
-    
+
   }
 
   &__subtitle {
@@ -207,6 +207,14 @@ body {
   &__newTask {
     position: relative;
     margin-left: 2rem;
+
+    @media (max-width: 576px) {
+      font-size: .75rem;
+    }
+  }
+
+  &__singleTaskWrapper {
+    padding-right: 4rem;
   }
 
   &__removeTaskBtn {
